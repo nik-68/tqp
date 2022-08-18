@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python3
 #-*- coding: utf-8 -*-
 import sys
@@ -38,30 +37,9 @@ print("""\033[93m
 \033[97m███   ███ ██████████████  █      
 \033[97m████ ████ █ █          █  █
 \033[97m█████████               ██     \033[33m      
-    
-""")
-username = str(input("\033[33m[ViperC2] \033[93mUsername:"))
-password = str(input("\033[33m[ViperC2] \033[93mPassword:"))
-if password == "yofiel" and username == "yofiel":
-    print ("Logged in as owner")
-    time.sleep(2)
-
-else:
-    print ("Incorrect Password. Please try again.")
-    time.sleep(999)
-
-os.system("clear")
-print("\033[92mConnecting To Server [\033[97m•\033[92m]")
-time.sleep(0.9)
-
-os.system("clear")
-print("Connecting To Server [\033[97m••\033[92m]")
-time.sleep(0.9)
-
-os.system("clear")
-print("Connecting To Server [\033[97m•••\033[92m]")
-time.sleep(0.9)
-
+   
+''')
+time.sleep(3.9)
 os.system("clear")
 print("Connecting To Server [\033[97m••\033[92m]")
 time.sleep(0.9)
