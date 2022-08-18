@@ -1,21 +1,14 @@
 import socket
 import socks
-import time
 import threading
 import random
 import re
 import urllib.request
 import os
-FataPhishing = "@"
 import sys
-
-Excrusher
-#Sanzo
 import random
 import socket
 import threading
-import os
-import sys
 import time
 from time import sleep
 
