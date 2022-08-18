@@ -15,7 +15,6 @@ sys.stdout.write("\x1b]2;[-] FielC2 | Online User : [{}] | Running Attack [5] | 
 
 os.system("clear")
 print("""\033[93m
-\033[93m
  █████                          ███               
 ░░███                          ░░░                
  ░███         ██████   ███████ ████  ████████     
