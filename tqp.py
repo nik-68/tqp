@@ -9,44 +9,35 @@ import os
 FataPhishing = "@"
 import sys
 
-while True:
-	code = input("ENTER PASSWORD :")
-	if code != FataPhishing:
-		print("Incorrect password")
-		continue
-	else:
-		#
+print('''
+___okeb
+''') # la grafica ci sta
 
+time.sleep(2)
 
-		print('''
-		___okeb
-			''') # la grafica ci sta
-
-		time.sleep(2)
-
-		print("__________")
-		time.sleep(0.5)
-		print("$_________")
-		time.sleep(0.3)
-		print("$$________")
-		time.sleep(0.5)
-		print("$$$_______")
-		time.sleep(0.2)
-		print("$$$$______")
-		time.sleep(0.1)
-		print("$$$$$_____")
-		time.sleep(0.2)
-		print("$$$$$$____")
-		time.sleep(0.5)
-		print("$$$$$$$___")
-		time.sleep(0.5)
-		print("$$$$$$$$__")
-		time.sleep(0.1)
-		print("$$$$$$$$$_")
-		time.sleep(0.1)
-		print("$$$$$$$$$$")
-		print('''
-		DDOS SENDER BY @Dev_Fata !!!
+print("__________")
+time.sleep(0.5)
+print("$_________")
+time.sleep(0.3)
+print("$$________")
+time.sleep(0.5)
+print("$$$_______")
+time.sleep(0.2)
+print("$$$$______")
+time.sleep(0.1)
+print("$$$$$_____")
+time.sleep(0.2)
+print("$$$$$$____")
+time.sleep(0.5)
+print("$$$$$$$___")
+time.sleep(0.5)
+print("$$$$$$$$__")
+time.sleep(0.1)
+print("$$$$$$$$$_")
+time.sleep(0.1)
+print("$$$$$$$$$$")
+print('''
+	DDOS SENDER BY @Dev_Fata !!!
 		''')
 
 
