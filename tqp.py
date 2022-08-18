@@ -51,10 +51,6 @@ time.sleep(0.9)
 
 methods = """
 
-                            ╔╦╗╔═╗╔╦╗╦ ╦╔═╗╔╦╗╔═╗
-                            ║║║║╣  ║ ╠═╣║ ║ ║║╚═╗
-                            ╩ ╩╚═╝ ╩ ╩ ╩╚═╝═╩╝╚═╝
-
              HOME METHODS     SERVER       BYPASSES      BYPASSES
             ╔════════════╗╔════════════╗╔════════════╗╔════════════╗
             ║ HOME       ║║ OVH        ║║ UDPBYPASS  ║║ FIVEM      ║
