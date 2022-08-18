@@ -41,9 +41,8 @@ print('''
 		''')
 
 
-
-		useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
-					"Avant Browser/1.2.789rel1 (http://www.avantbrowser.com)",
+useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
+	                                "Avant Browser/1.2.789rel1 (http://www.avantbrowser.com)",
 					"Baiduspider ( http://www.baidu.com/search/spider.htm)",
 					"BlackBerry7100i/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/103",
 					"BlackBerry7520/4.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/5.0.3.3 UP.Link/5.1.2.12 (Google WAP Proxy/1.0)",
