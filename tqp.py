@@ -472,8 +472,7 @@ useragents=["AdsBot-Google ( http://www.google.com/adsbot.html)",
 					"wii libnup/1.0",
 					]
 
-
-        def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
+            def starturl(): # in questa funzione setto l'url per renderlo usabile per il futuro settaggio delle richieste HTTP.
 			global url
 			global url2
 			global urlport
